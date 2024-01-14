@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Le nombre de commande dans la plateforme</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body count">
+              0
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Detail sur la carte</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body count">
+            <p>Vous allez payé au total: <span>1000</span> FCFA</p>
+            <div class="form">
+                <div class="form-dispo">
+                  <div class="mb-3 m-2">
+                    <input type="text" placeholder="Entrer votre nom..." class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    
+                  </div>
+                  <div class="mb-3 m-2">
+                    <input type="tel" placeholder="Entrer votre numero de telephone" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+                    
+                  </div>
+                  <div class="mb-3 m-2">
+                    <input type="text" placeholder="Entrer le nom de la nouriture..." class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp">
+                    
+                  </div>
+                  <div class="mb-3 m-2">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Mode de paiement</option>
+                      <option value="1">Orange Money</option>
+                      <option value="2">Mtn Mobile Money</option>
+                      <option value="3">Express Union Mobile Money</option>
+                    </select>
+                  </div>
+                  
+                </div>
+              
+                
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary disabled" data-target="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop type="submit">Commander</button>
+                </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+                   
+                        <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">CamerResto.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              
+              <div class="dropdown mt-3">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Acceuil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#plats">Plats</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pourquoi">Pourquoi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#special">Menus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#commandes">Commande</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li> -->
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Plats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pourquoi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Commande</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+              
+            </ul>
+            
+            
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <img src="../image/Pouletdg.jpg" alt="">
+        <div class="info">
+            <h1>POULET DG</h1>
+            <i class="fa-regular fa-star" style="color: #d81313;"></i>
+            <i class="fa-regular fa-star" style="color: #d81313;"></i>
+            <i class="fa-regular fa-star" style="color: #d81313;"></i>
+            <i class="fa-regular fa-star" style="color: #d81313;"></i>
+            <div class="range">
+                <h2><span>1000</span> FCFA </h2><h2 class="upset">2000 FCFA</h2><h3>promo</h3>
+            </div>
+            <p>Vous économisez <span style="font-weight: bold;">10000 FCFA</span></p><br>
+            <div class="fa-flex">
+              <i style="margin: 5px 5px 0 0;" class="fa-solid fa-truck"></i>
+              <p>Livraison gratuit sous 1H</p>
+            </div>
+            <div class="fa-flex">
+              <i style="margin: 5px 5px 0 0;" class="fa-solid fa-arrows-rotate"></i>
+              <p>Retour gratuit sous 30jours</p>
+            </div>
+            <div class="fa-flex">
+              <i style="margin: 5px 5px 0 0;" class="fa-solid fa-dollar-sign"></i>
+              <P>Paiements à la livraison</P>
+            </div>
+            
+            <p class="quantity">Quantité</p>
+            <div class="range2">
+                <input min="1" type="number"><h2 style="font-size: 20px;padding-top: 10px;">TOTAL:</h2><h2 style="font-size: 20px;"><span style="font-weight: bold; font-size: 35px;">1000</span>FCFA</h2>
+            </div>
+            <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Payer maintenant</button>
+            
+        </div>
+    </div>
+
+
+
+
+      
+      
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+</html>
